@@ -2,9 +2,16 @@
 
 namespace Mod2_HW1
 {
-    class Program
+    /// <summary>
+    /// Start point of app.
+    /// </summary>
+    public class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Start point of app.
+        /// </summary>
+        /// <param name="args">args added via console.</param>
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
