@@ -13,7 +13,8 @@ namespace Mod2_HW1
         /// <param name="args">args added via console.</param>
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var starter = new Starter();
+            starter.Run();
         }
     }
 }

@@ -13,13 +13,17 @@ namespace Mod2_HW1
     {
         public Result InfoMethod()
         {
-            var result = new Result { Status = true };
+            var result = new Result { Status = true, Text = "Start method : InfoMethod()" };
+            Logger logger = Logger.GetInstance();
+            logger.MakeLog(LoggerTypes.Info, result.Text);
             return result;
         }
 
         public Result WarningMethod()
         {
-            var result = new Result { Status = true };
+            var result = new Result { Status = true, Text = "Skipped logic in method: WarningMethod()" };
+            Logger logger = Logger.GetInstance();
+            logger.MakeLog(LoggerTypes.Warning, result.Text);
             return result;
         }
 
